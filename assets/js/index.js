@@ -54,9 +54,9 @@ avgMonthChange = monthChangeTot/(totNumMonth - 1);
 console.log("Financial Analysis \n----------------------------");
 console.log("Total months: ", totNumMonth);
 console.log("Total: $" + totProfitLoss);
-console.log("Average Change: " + avgMonthChange.toFixed(2));
+console.log("Average Change: $" + avgMonthChange.toFixed(2));
 console.log(`Greatest Increase in Profits: ${greatestIncreaseDate} ($${greatestIncrease})`);
-console.log(`Greatest Dcrease in Profits: ${greatestDecreaseDate} ($${greatestDecrease})`);
+console.log(`Greatest Decrease in Profits: ${greatestDecreaseDate} ($${greatestDecrease})`);
 
       
 
