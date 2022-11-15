@@ -3,33 +3,45 @@ You have been given a dataset composed of arrays with two fields, Date and Profi
 Your task is to write JavaScript code that analyzes the records to calculate each of the following:
 */
 
+/* Global Variables */ 
 var totNumMonth = 0;
 var totProfitLoss = 0;
+var monthChangeTot = 0;
+var avgMonthChange = 0
 
 
-console.log("Financial Analysis \n----------------------------");
+/* Main body */
 
-// The total number of months included in the dataset.
+// Total number of months included in the dataset.
 totNumMonth = finances.length;
-console.log("Total months: ", totNumMonth);
 
-// The net total amount of Profit/Losses over the entire period.
-for(var i = 0; i < finances.length; i++) { 
-    var month = finances[i];
-    totProfitLoss += month [1];
+// Net total amount of Profit/Losses over the entire period.
+for (var i = 0; i < finances.length; i++ ) {
+    
+    var monthChange = 0;    
+
+    for(var j = 1; j < finances[i].length; j++) {
+        totProfitLoss += finances[i][j];
+
+        // Average of the changes in Profit/Losses over the entire period.
+        if (i >= finances.length - 1) {
+            break;
+        } 
+        // Total change in profits from month to month
+        monthChange = finances[i+1][j] - finances[i][j];
+        monthChangeTot += monthChange;
+    } 
 }
+// Month to month average change in profits.
+avgMonthChange = monthChangeTot/(totNumMonth - 1);
 
+
+/* Log to console */ 
+console.log("Financial Analysis \n----------------------------");
+console.log("Total months: ", totNumMonth);
 console.log("Total: $" + totProfitLoss);
-
-    // The average of the changes in Profit/Losses over the entire period.
-
-
-        /* You will need to track what the total change in profits are 
-        //from month to month and then find the average. */
-
-
-        // (Total/Number of months)
-
+console.log("Average Change: " + avgMonthChange.toFixed(2));
+      
 
 
     // The greatest increase in profits (date and amount) over the entire period.
