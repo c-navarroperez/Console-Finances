@@ -2,8 +2,7 @@
 
 ## The Repository
 
-This repository contains th development of a [Financial Analysis application](), created to simulate a real-world scenario, where the financial records of a ficticious company are analyzed using a financial records dataset provided in the [finances.js](https://github.com/c-navarroperez/Console-Finances/blob/main/assets/js/finances.js) file. This source code is available to everyone under the standard [MIT](LICENSE.txt) license.
-
+This repository contains the development of a [Financial Analysis application](), created to simulate a real-world scenario, where the financial records of a fictitious company are analysed using a financial records dataset provided in the [finances.js](https://github.com/c-navarroperez/Console-Finances/blob/main/assets/js/finances.js) file. This source code is available to everyone under the standard [MIT](LICENSE.txt) license.
 
 ## Analysis 
 
@@ -33,7 +32,7 @@ Greatest Decrease in Profits: Sep-2013 ($-2196167)
 
 ## Instructions
 
-To analyse a different set of data please imput the month date and the profit/loss for said month in the [finances.js](https://github.com/c-navarroperez/Console-Finances/blob/main/assets/js/finances.js) file with the following format: 
+To analyse a different set of data please input the month date and the profit/loss for said month in the [finances.js](https://github.com/c-navarroperez/Console-Finances/blob/main/assets/js/finances.js) file with the following format: 
 
 ```text
 var finances = [
@@ -53,6 +52,3 @@ var finances = [
 © 2022 Carlos Navarro. All Rights Reserved.
 
 Licensed under the [MIT](LICENSE.txt) license.
-
-
-
