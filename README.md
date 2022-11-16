@@ -32,10 +32,10 @@ Greatest Decrease in Profits: Sep-2013 ($-2196167)
 
 ## Instructions
 
-Open the [Financial Analysis application](https://c-navarroperez.github.io/Console-Finances/) and deploy the web developer tools built into your browser. Navigate to the terminal to see the results.
+Open the [Financial Analysis application](https://c-navarroperez.github.io/Console-Finances/) and deploy the web developer tools built into your browser. Navigate to the console to see the results.
 
 <p align="center">
-  <img alt="Browser development tools terminal screenshot." src="assets\images\browser-devTools-terminal.png">
+  <img alt="Browser development tools console screenshot." src="assets\images\browser-devTools-console.png">
 </p>
 
 To analyse a different set of data please input the month date and the profit/loss for said month in the [finances.js](https://github.com/c-navarroperez/Console-Finances/blob/main/assets/js/finances.js) file with the following format: 
